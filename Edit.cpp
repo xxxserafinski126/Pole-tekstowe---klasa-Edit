@@ -71,4 +71,7 @@ void Edit::userText() {
         }
     }
     clear();
+    
+    HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
+    SetConsoleTextAttribute(hConsole, 7);
 }
