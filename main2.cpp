@@ -1,6 +1,7 @@
 #include <iostream>
 #include "edit.h"
 #include <conio.h>
+#include "color_manip.h"
 
 int main() {
     Edit e;
@@ -31,6 +32,13 @@ int main() {
     system("cls");
     s = e2.getText();
     std::cout << "Zawartosc pola tekstowego: " << s << std::endl;
+    _getch();
+
+    system("cls");
+    std::cout << "Druga część programu" << std::endl;
+    std::cout << yellow << "A" << red << "l" << blue << "a" << green << " m" << gray << "a"
+        << light_blue << " k" << light_yellow << "o" << cyan << "t" << magenta << "a";
+    std::cout << setColor(FOREGROUND_RED | BACKGROUND_GREEN) << "Miauu" << defcolor << " xxzyw";
     _getch();
 
     return 0;
